@@ -4,6 +4,7 @@ from django.views.generic.edit import CreateView
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth.decorators import login_required
 from .forms import CustomUserCreationForm
+from .models import CustomUser
 
 # Create your views here.
 
@@ -23,4 +24,5 @@ class CustomLogoutView(LogoutView):
     
 @login_required
 def user_profile(request):
-    return render(request, 'user/profile.html')
+    user = request.user
+    return render(request, 'user/profile.html', {'user': user})

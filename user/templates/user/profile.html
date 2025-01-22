@@ -8,4 +8,8 @@
 {% if user.profile_image %}
 <img src="{{ user.profile_image.url }}" alt="Profile Image" />
 {% endif %}
+  <form method="POST" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+  </form>
 {% endblock %}
