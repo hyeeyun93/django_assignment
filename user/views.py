@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
 from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth.decorators import login_required
 from .forms import CustomUserCreationForm
 
 # Create your views here.
@@ -19,3 +20,7 @@ class CustomLoginView(LoginView):
 # Logout view
 class CustomLogoutView(LogoutView):
     template_name = 'user/logout.html'
+    
+@login_required
+def user_profile(request):
+    return render(request, 'user/profile.html')
