@@ -68,29 +68,29 @@ MTV 패턴을 기반으로 `User`와 `Post` 앱을 개발하며, 추가적으로
 
 ## 📂 프로젝트 구조  
 
-project/
- ├── user/
- │ ├── templates/user/
- │ │ ├── signup.html
- │ │ ├── login.html
- │ │ └── profile.html
- │ ├── views.py
- │ ├── models.py
- │ └── ... 
- ├── post/
- │ ├── templates/post/
- │ │ ├── post_list.html
- │ │ ├── post_detail.html
- │ │ ├── post_form.html
- │ │ └── post_confirm_delete.html
- │ ├── views.py
- │ ├── models.py
- │ └── ... 
- ├── templates/ 
- │ ├── base.html 
- │ ├── navbar.html 
- │ └── footer.html 
- └── ...
+project/  
+ ├── user/  
+ │ ├── templates/user/  
+ │ │ ├── signup.html  
+ │ │ ├── login.html  
+ │ │ └── profile.html  
+ │ ├── views.py  
+ │ ├── models.py  
+ │ └── ...   
+ ├── post/  
+ │ ├── templates/post/  
+ │ │ ├── post_list.html  
+ │ │ ├── post_detail.html  
+ │ │ ├── post_form.html  
+ │ │ └── post_confirm_delete.html  
+ │ ├── views.py  
+ │ ├── models.py  
+ │ └── ...   
+ ├── templates/   
+ │ ├── base.html   
+ │ ├── navbar.html   
+ │ └── footer.html   
+ └── ...  
 
 ---
 
